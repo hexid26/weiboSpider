@@ -1,16 +1,15 @@
 {
-	"user_id_list": ["1669879400"],
-    "filter": 1,
-    "since_date": "2018-01-01",
-    "write_mode": ["csv", "txt"],
-    "pic_download": 1,
-    "video_download": 1,
-    "cookie": "your cookie",
-    "mysql_config": {
-        "host": "localhost",
-        "port": 3306,
-        "user": "root",
-        "password": "123456",
-        "charset": "utf8mb4"
-    }
+  "user_id_list": [
+    "1699432410",
+    "2803301701",
+    "2656274875",
+    "1974576991",
+    "1686546714"
+  ],
+  "filter": 1,
+  "since_date": "2020-02-01 00:00",
+  "write_mode": ["json"],
+  "pic_download": 0,
+  "video_download": 0,
+  "cookie": "ALF=1583128956; SCF=Arj-f5c_kluPdXD6dmuUAR-35H8B7C3WO7vJwnW4ayKFwX56tKiVVaK68lI-6Q-mJ4nErcve80wCMBWhwBUr5x4.; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W58pcVoxo.PLD31iCUeB5Av5JpX5K-hUgL.Foq7e0n4e02NeKe2dJLoI7UQ9PyD9hzc; SUB=_2A25zMWd5DeRhGeBO6FoY8y_Lyj-IHXVQ2gkxrDV6PUJbkdAKLVjnkW1NSh5XsUODdOzHe9U9qqZW46blduQcRhHx; SUHB=04Wu-ckzo-RMWF; SSOLoginState=1580537641; _T_WM=80459961847; WEIBOCN_FROM=1110006030; MLOGIN=1; M_WEIBOCN_PARAMS=uicode%3D20000174"
 }
