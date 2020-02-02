@@ -102,6 +102,13 @@ def read_json_file(file_name):
   return temp_weibo_list
 
 
+def load_json_file(file_name):
+  json_data = ""
+  with open(file_name, 'r') as json_file:
+    json_data = json.load(json_file)
+  return json_data
+
+
 def sort_json(key_name, json_object, re_flag):
   json_object.sort(key=lambda k: (k.get(key_name, 0)), reverse=re_flag)
 
@@ -194,16 +201,15 @@ def test_time():
 def main():
   """Main function"""
   # __logger__.info('Process start!')
-  test_time()
   json_data = load_files_to_json("")
-  existed_data = load_files_to_json("Archive.json")
-  existed_data = existed_data + json_data
   json_data = exclude_by_score(6, 0, json_data)
-  # sort_json_by_score(json_data, 0, True)
+  existed_data = load_json_file("Archive.json")
+  existed_data = existed_data + json_data
+  # sort_json_by_score(existed_data, 0, True)
   # save_json_to_xlsx_file(json_data, "Mode0.xls", 0)
-  save_json_to_xlsx_file_all_mode(json_data, "Mode.xls")
-  sort_json("time", json_data, False)
-  save_json("Archive.json", json_data)
+  save_json_to_xlsx_file_all_mode(existed_data, "Mode.xls")
+  sort_json("time", existed_data, True)
+  save_json("Archive.json", existed_data)
   # __logger__.debug(json.dumps(json_data, ensure_ascii=False))
   # __logger__.info('Process end!')
 
